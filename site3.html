@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACACO?</title>
+</head>
+<body>
+    <h1>Você é macaco?</h1>
+    <p>digite seu nome e descubra:</p>
+    <input type="text" name="nome" id="nome">
+    <input type="button" value="descubra!" onclick="macaco()">
+
+    <script type="text/javascript">
+        function macaco()
+        {
+            var S = document.getElementById('nome');
+            var n = String(S.value);
+            if(n == 'Amaro' || n == 'Lucas' || n == 'Luan' || n == 'Pikenu')
+                document.write("MACACOO!!!!!!!!!!<br/>UGA UGA UGA");
+            else
+                document.write("você está seguro(a).");
+        }
+    </script>
+
+</body>
+</html>
